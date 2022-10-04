@@ -1,3 +1,8 @@
 .descriptionBlock {
     padding: 10px;
 }
+
+.statusJob img {
+    height: 200px;
+    width: auto;
+}
