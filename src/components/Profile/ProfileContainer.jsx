@@ -51,6 +51,4 @@ function withRouter(Component) {
     return ComponentWithRouterProp
 }
 
-withRouter()
-
 export default connect(mapStateToProps, {setUserProfile})(withRouter(ProfileContainer));
