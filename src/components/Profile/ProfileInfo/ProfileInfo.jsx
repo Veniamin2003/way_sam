@@ -4,6 +4,8 @@ import Preloader from '../../common/Preloader/Preloader';
 import relax from '../../../assets/images/relax1.gif'
 import searching from '../../../assets/images/searching1.gif'
 import preloader from "../../../assets/images/loader.gif";
+import ProfileStatus from './ProfileStatus'
+
 
 const ProfileInfo = (props) => {
 
@@ -13,10 +15,10 @@ const ProfileInfo = (props) => {
 
     return (
         <div>
-            <div>
+            {/*<div>
                 <img
                     src='https://runews24.ru/assets/components/phpthumbof/cache/c36342ea58f1e9ff2f1fa51e0735ca75.e7b3df8d2521429058af50ff07f8cef7.jpg'></img>
-            </div>
+            </div>*/}
             <div className={s.descriptionBlock}>
                 <div><img src={props.profile.photos.large} /></div>
                 <div>{props.profile.fullName}</div>
@@ -29,7 +31,7 @@ const ProfileInfo = (props) => {
 
 
 
-                ava + description
+                <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
             </div>
         </div>
     )

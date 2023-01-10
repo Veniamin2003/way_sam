@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
+debugger
 root.render(
     <Provider store={store}>
         <App/>
