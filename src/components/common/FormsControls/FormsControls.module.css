@@ -10,3 +10,12 @@
     color: maroon;
     font-weight: bold;
 }
+
+.formSummaryError {
+    font-weight: bold;
+    text-align: center;
+    border: maroon 2px solid;
+    padding: 5px;
+    color: black;
+    width: 200px;
+}
