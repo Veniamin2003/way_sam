@@ -6,6 +6,8 @@ import {maxLengthCreator, required} from "../../../utils/validators/validators";
 import {Textarea} from "../../common/FormsControls/FormsControls";
 
 const MyPosts = (props) => {
+
+    console.log("RENDER")
     let postsElements = props.posts.map(p => <Post messages={p.message} key={p.id} likesCount={p.likesCount}/>);
 
     let AddNewPost = (values) => {
@@ -24,20 +26,6 @@ const MyPosts = (props) => {
         </div>
     )
 }
-
-/*let AddNewPostForm = (props) => {
-    return <form onSubmit={props.handleSubmit}>
-        <div>
-            <Field name="newPostText" component="textarea"
-                   validate={[required, maxLengthCreator(10)]} />
-        </div>
-        <div>
-            <button>Add post</button>
-        </div>
-    </form>
-}
-
-let AddNewPostFormRedux = reduxForm({form: "ProfileAddNewPostForm"}) (AddNewPostForm)*/
 
 const maxLength10 = maxLengthCreator(10);
 

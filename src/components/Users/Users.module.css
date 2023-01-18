@@ -1,8 +1,15 @@
 .userPhoto {
-    width: 150px;
-    height: 150px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: darkslategrey 2px solid;
 }
 
-.selectedPage {
-    font-weight: bold;
+.usersPhoto {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: darkslategrey 1px solid;
 }

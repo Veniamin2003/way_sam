@@ -7,7 +7,6 @@ let initialState = {
 };
 
 const appReducer = (state = initialState, action) => {
-    debugger
     switch(action.type) {
         case SET_INITIALIZED_SUCCESS:
             return {
