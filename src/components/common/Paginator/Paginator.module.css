@@ -1,3 +1,48 @@
-.selectedPage {
+.pageNumber.selectedPage {
     font-weight: bold;
+    background: rgba(30, 143, 98, 0.7);
+}
+
+.paginator {
+    text-align: center;
+    margin: 40px;
+}
+
+.paginator button {
+    margin: 0 10px 0 10px;
+
+    font-weight: bold;
+
+    height: 30px;
+    width: 90px;
+
+    background: rgba(17, 138, 71, 0.5);
+
+    transition: 0.3s;
+
+    border: solid 1px rgba(9, 61, 32, 0.9);
+    border-radius: 3px;
+}
+
+.paginator button:hover {
+    cursor: pointer;
+    transform: translate(0, 3px);
+    transition: 0.3s;
+    box-shadow: 1px 4px 10px 3px rgba(33, 88, 99, 0.4);
+
+}
+
+.pageNumber {
+    border-radius: 3px;
+    margin: 0 2px 0 2px;
+    padding: 5px;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 3px 1px rgba(11, 32, 36, 0.7);
+    transition: 0.3s;
+}
+
+.pageNumber:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 1px 1px 3px 3px rgba(11, 32, 36, 0.7);
 }

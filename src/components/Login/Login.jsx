@@ -8,7 +8,6 @@ import {Navigate} from "react-router-dom"
 import style from "../common/FormsControls/FormsControls.module.css"
 
 const LoginForm = ({handleSubmit, error}) => {
-    debugger
     return (
         <form onSubmit={handleSubmit}>
             {createField("Login", "email", [required], Input)}
