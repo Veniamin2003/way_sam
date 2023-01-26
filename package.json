@@ -2,7 +2,7 @@
   "name": "way_sam",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://veniamin2003.github.io/demo-samurai",
+  "homepage": "https://veniamin2003.github.io/way_samurai",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",

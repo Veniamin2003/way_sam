@@ -2,7 +2,12 @@
     padding: 10px;
 }
 
-.statusJob img {
-    height: 200px;
+.statusJob {
+    display: flex;
+    align-items: center;
+}
+
+.imgStatusJob img {
+    height: 100px;
     width: auto;
 }

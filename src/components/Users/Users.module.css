@@ -1,4 +1,4 @@
-.userPhoto {
+.mainPhoto {
     padding-bottom: 30px;
     padding-top: 30px;
     width: 200px;
@@ -13,3 +13,8 @@
     border-radius: 100px;
     border: darkslategrey 1px solid;
 }
+
+.contact {
+    padding-left: 10px;
+}
+

@@ -19,19 +19,29 @@ const ProfileStatusWithHooks = (props) => {
     }
 
     return (
-        <div>
-            { !editMode &&
-                <div>
-                    <span onDoubleClick={activateEditMode}>{props.status || "---------"}</span>
-                </div>
-            }
-            { editMode &&
-                <div>
-                    <input onChange={onStatusChanged} autoFocus={true} onBlur={deactivateEditMode} value={status}/>
-                </div>
-            }
+        <div>{ props.isOwner
+            ?
+            <div>
+                {!editMode &&
+                    <div>
+                        <b>Статус: </b><span onDoubleClick={activateEditMode}>{props.status || "Статус отсутствует"}</span>
+                    </div>
+                }
+                {editMode &&
+                    <div>
+                        <input onChange={onStatusChanged} autoFocus={true} onBlur={deactivateEditMode} value={status}/>
+                    </div>
+                }
+            </div>
+            :
+            <div>
+                <b>Статус: </b><span>{props.status || "Статус отсутствует"}</span>
+            </div>
+        }
         </div>
     )
 }
+
+
 
 export default ProfileStatusWithHooks
